@@ -1,1 +1,1 @@
-# pet-projects
+Pet Projects using HTML/CSS/JavaScript
