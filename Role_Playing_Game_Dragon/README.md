@@ -1,0 +1,1 @@
+In this practice project, I've learned fundamental programming concepts in JavaScript by coding the Role Playing Game. I've learned how to work with arrays, strings, objects, functions, loops, if/else statements, and more.
