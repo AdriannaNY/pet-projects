@@ -1,1 +1,1 @@
-# Pet Projects using HTML/CSS/JavaScript
+# Pet Projects using Java/HTML/CSS/JavaScript
