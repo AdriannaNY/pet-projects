@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRI - Quantum Relations Intelligence</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-image: url("img/Sign_In_FK_background.png");
+      }
+
+      #wrap {
+        display: flex;
+        justify-content: center;
+      }
+
+      .main-logo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin-top: 185px;
+      }
+
+      .main-logo-img {
+        width: 100%;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin-top: 195px;
+      }
+
+      .logo,
+      .qri-text,
+      .pearl-container,
+      .social-container,
+      .sign-in-text {
+        height: 10%;
+      }
+
+      .pearl-container {
+        margin-bottom: 10px;
+        margin-top: 150px;
+      }
+
+      .img-qri-text {
+        width: 100%;
+      }
+
+      
+
+      /* The overlay effect (full height and width) - lays on top of the container and over the image */
+      .overlay {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 1s ease;
+      }
+
+      /* Container needed to position the overlay. Adjust the width as needed */
+
+      .pearl-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .pearl-container {
+        margin-bottom: 10px;
+        margin-top: 150px;
+      }
+
+      /* When you mouse over the container, fade in the overlay icon*/
+      .pearl-container:hover .overlay {
+        opacity: 1;
+      }
+
+      .pearl-container a {
+        cursor: url("img/cursor.cur"), pointer !important;
+      }
+
+      a {
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="main-logo">
+        <a href="https://cognitivintelligence.com/#/about-us" target="”_blank”"> <img
+            src="img/Main_Logo.png"
+            alt="Main Logo QRI"
+            class="main-logo-img"
+        /></a>
+         
+      </div>
+
+      <div class="container">
+        <div class="logo">
+          <a href="https://cognitivintelligence.com/#/" target="”_blank”">
+            <img
+              src="img/QRILogo.png"
+              alt="Quantum Relations Intelligence Logo"
+          /></a>
+        </div>
+
+        <div class="qri-text">
+          
+          <a href="https://cognitivintelligence.com/#/technology" target="”_blank”">
+            <img class="img-qri-text" src="img/QRIText.png" alt="QRI Text"
+          /></a>
+        </div>
+
+        <div class="pearl-container">
+          <img
+            src="img/PearlDefault.png"
+            class="pearl-icon"
+            alt="Pearl Decorative Icon"
+           
+          />
+          <div class="overlay">
+            <a href="Pearl_Clicked/index.html">
+              <img src="img/PearlHovered.png"
+              title="START" />
+            </a>
+          </div>
+        </div>
+        <div class="sign-in-text"></div>
+          <div class="social-container"></div>
+
+        
+
+      
+
+    
+   
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C8_Search</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      button {
+        width: 90px;
+        height: 90px;
+        border-radius: 0.625rem;
+        border: none;
+        background-color: transparent;
+        background-image: url(img/PearlDefault.png);
+
+        margin: 0;
+      }
+      button:hover {
+        background-image: url(img/PearlHovered.png);
+      }
+      input {
+        width: 700px;
+        height: 50px;
+        padding: 1rem;
+        border-radius: 0.625rem;
+        border: 1.5px solid #2edaf1;
+        background-color: transparent;
+        color: #fff;
+      }
+      .placeholder-text {
+        font-family: Montserrat-SemiBold;
+        font-size: 30px;
+        margin: 0;
+        padding: 16px;
+      }
+
+      .tag_form p {
+        color: #fff;
+        opacity: 0.5;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .tag_form p:hover {
+        opacity: 1;
+      }
+
+      form {
+        column-gap: 30px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .acg_rights_logo {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+      }
+
+      .qri_logo {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+
+      .logout_logo {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1;
+        opacity: 0.7;
+      }
+
+      .logout_logo:hover {
+        opacity: 1;
+      }
+
+      .user {
+        position: absolute;
+        right: 80px;
+        top: 25px;
+        opacity: 0.7;
+        z-index: 1;
+        align-items: center;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        font-family: "Montserrat-Semibold";
+        font-size: 16px;
+        font-weight: 400;
+        height: 50px;
+        line-height: 24px;
+        gap: 5px;
+      }
+
+      .tags .tag_form {
+        border: 1.5px solid #202121;
+        border-radius: 0.625rem;
+      }
+
+      .tags .tag_form:hover {
+        border-color: #70cad6;
+      }
+
+      .tags {
+        align-items: center;
+        box-sizing: border-box;
+        column-gap: 8px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 84px;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 90px;
+        margin-top: 0px;
+        overflow-wrap: anywhere;
+        row-gap: 10px;
+        text-align: start;
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      form button,
+      .tags .tag_form p {
+        cursor: url("img/cursor.cur"), pointer !important;
+      }
+
+      a:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas style="background-color: #000000"> </canvas>
+    <div class="qri_logo">
+      <a href="https://cognitivintelligence.com/#/" target="”_blank”"
+        ><img src="img/QRILogo.png" alt="Quantum Relations Intelligence Logo"
+      /></a>
+    </div>
+    <div class="acg_rights_logo">
+      <img src="img/ACG_rights.png" alt="ACG rights logo" />
+    </div>
+
+    <div class="user">
+      <h3>Ekaterina Dubrova</h3>
+      <div class="user_logo">
+        <a href="#"><img src="img/user_icon.png" alt="User Logo" /></a>
+      </div>
+    </div>
+    <div class="logout_logo" title="Logout">
+      <a href="../../../../Pearl_Clicked/index.html"
+        ><img src="img/logout_icon.png" alt="Logout Logo"
+      /></a>
+    </div>
+
+    <form>
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <input
+          type="text"
+          required=""
+          placeholder="Enter Search Item and Choose Category"
+          class="placeholder-text"
+          value=""
+        />
+        <button type="submit" title="Press to execute the query"></button>
+      </div>
+
+      <div class="tags">
+        <div class="tag_form"><p class="tag-text">Persons</p></div>
+        <div class="tag_form"><p class="tag-text">Events</p></div>
+        <div class="tag_form"><p class="tag-text">Concepts</p></div>
+        <div class="tag_form"><p class="tag-text">Groups</p></div>
+        <div class="tag_form"><p class="tag-text">Geography</p></div>
+        <div class="tag_form"><p class="tag-text">Time</p></div>
+        <div class="tag_form"><p class="tag-text">Objects</p></div>
+        <div class="tag_form"><p class="tag-text">Science</p></div>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
